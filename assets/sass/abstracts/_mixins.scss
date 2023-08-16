@@ -1,0 +1,46 @@
+// all area main class
+// .header_area_top,
+// .header_area,
+// .nav_area,
+// .banner_area,
+// .introduction_and_notice_area,
+// .principal_message_area,
+// .co-curricular_activities_and_news_activities,
+// .youtube_video_area,
+// .image_and_video_gallery_area,
+// .footer_area,
+.copyright_area {
+    // display: none;
+}
+/* responsive_desine_mixin start*/
+@mixin xs() {
+    @media screen and (max-width: 575.9px) {
+        @content();
+    }
+}
+@mixin sm() {
+    @media (min-width: 576px) and (max-width: 767.9px) {
+        @content();
+    }
+}
+@mixin md() {
+    @media (min-width: 768px) and (max-width: 991.9px) {
+        @content();
+    }
+}
+@mixin lg() {
+    @media (min-width: 992px) and (max-width: 1199.9px) {
+        @content();
+    }
+}
+@mixin xl() {
+    @media (min-width: 1200px) and (max-width: 1399.9px) {
+        @content();
+    }
+}
+@mixin xxl() {
+    @media (min-width: 1400px) {
+        @content();
+    }
+}
+/* responsive_desine_mixin end*/

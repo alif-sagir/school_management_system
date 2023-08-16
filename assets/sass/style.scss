@@ -1,0 +1,12 @@
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
+@import "./core/typography";
+@import "./core/reset";
+@import "./core/root";
+@import "./vendors/grid";
+
+@import "./layouts/header";
+@import "./layouts/navigation";
+@import "./pages/index.scss";
+@import "./layouts/footer";
+

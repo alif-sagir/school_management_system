@@ -1,0 +1,633 @@
+// banner_area start
+.banner_area {
+    border: $border;
+    width: 100%;
+    height: 600px;
+    background-color: #dcd7d7;
+    @include xs {
+        height: 360px;
+    }
+    .banner_area_2 {
+        border: $border;
+        // background-color: rgba(0, 0, 0, 0.3);
+        height: 100%;
+        align-items: center;
+        display: grid;
+
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        .banner_area_content {
+            border: $border;
+            .banner_text_area {
+                border: $border;
+                .school_title {
+                    border: $border;
+                    .title_text {
+                        border: $border;
+                        // color: $master_color_2;
+                        color: $white;
+                        font-size: 30px;
+                        font-family: $font_semibold;
+                        @include xs {
+                            font-size: 16px;
+                        }
+                    }
+                }
+                .school_name {
+                    border: $border;
+                    display: inline-block;
+                    background-color: #192f59f2;
+                    padding: 15px 25px;
+                    margin: 45px 0px;
+                    @include xs {
+                        margin: 20px 0px;
+                      
+                    }
+                    .name_text {
+                        border: $border;
+                        color: $white;
+                        font-size: 50px;
+                        font-family: $font_extrabold;
+                        @include xs {
+                            font-size: 18px;
+                        }
+                    }
+                }
+                .button_area {
+                    border: $border;
+                    @include xs{
+                        margin-top: 50px;
+                    }
+                    button {
+                        border: $border;
+                        font-size: 20px;
+                        line-height: 20px;
+                        font-family: $font_medium;
+                        // color: $master_color_2;
+                        color: $white;
+                        // background-color: $white;
+                        background-color: $master_color_1;
+                        padding: 10px 15px;
+                        transition-duration: 0.4s;
+                        &:hover {
+                            background-color: $white;
+                            color: $master_color_2;
+                        }
+                    }
+                }
+            }
+            .banner_image_area {
+                border: $border;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}
+// banner_area end
+
+// introduction_and_notice_area start
+.introduction_and_notice_area {
+    border: $border;
+    margin: 30px 0px;
+    .introduction_and_notice_area_content {
+        border: $border;
+        // introduction_area start
+        .introduction_area {
+            border: $border;
+            .introduction_title {
+                border: $border;
+                background-color: $master_color_2;
+                text-align: center;
+                padding: 10px 0px;
+                margin-bottom: 30px;
+                .text_title {
+                    border: $border;
+                    color: $white;
+                }
+            }
+            .introduction_text {
+                border: $border;
+                font-size: 16px;
+                font-family: $font_regular;
+                .text {
+                    margin: 20px 0px;
+                }
+            }
+        }
+        // introduction_area end
+
+        // notice_area start
+        .notice_area {
+            border: $border;
+            background-color: $master_color_2;
+            text-align: center;
+            padding: 10px 0px;
+            margin-bottom: 30px;
+            width: 100%;
+            .text_title {
+                border: $border;
+                color: $white;
+            }
+        }
+        .notice_area_content {
+            border: $border;
+            ul {
+                border: $border;
+                gap: 20px;
+                display: grid;
+                li {
+                    border: $border;
+                    a {
+                        border: $border;
+                        font-size: 16px;
+                        font-family: $font_regular;
+                        color: $black;
+                        transition-duration: 0.4s;
+                        &:hover {
+                            color: $master_color_2;
+                        }
+                        .right_icon {
+                            border: $border;
+                            margin-right: 10px;
+                            i {
+                                border: $border;
+                                color: $master_color_2;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .next_page_button {
+            border: $border;
+            justify-content: center;
+            display: flex;
+            margin-top: 30px;
+            gap: 10px;
+            button {
+                border: $border;
+                width: 30px;
+                height: 30px;
+                justify-content: center;
+                display: flex;
+                align-items: center;
+                background-color: transparent;
+                border: 1px solid #e1e1e1;
+                position: relative;
+                transition-duration: 0.4s;
+
+                &:hover {
+                    background-color: $off_white;
+                    i {
+                        color: $black;
+                    }
+                }
+                i {
+                    border: $border;
+                    color: $off_white;
+                    transition-duration: 0.4s;
+                }
+            }
+            .button_1 {
+                &::after {
+                    content: "";
+                    width: 150px;
+                    height: 1px;
+                    background-color: #0000000f;
+                    position: absolute;
+                    left: -170px;
+                }
+            }
+            .button_2 {
+                &::after {
+                    content: "";
+                    width: 150px;
+                    height: 1px;
+                    background-color: #0000000f;
+                    position: absolute;
+                    right: -170px;
+                }
+            }
+        }
+        // notice_area end
+    }
+}
+// introduction_and_notice_area end
+
+// principal_message_area start
+.principal_message_area {
+    background-color: $bg_color;
+    padding: 50px 0px;
+    .principal_message_area_content {
+        border: $border;
+        // principal_image_name_and_title_area start
+        .principal_image_name_and_title_area {
+            height: 100%;
+            align-items: center;
+            display: grid;
+            .principal_image_area {
+                border: $border;
+                justify-content: center;
+                display: flex;
+                width: 450px;
+                height: 520px;
+                margin: auto;
+                @include xs {
+                    width: 275px;
+                    height: 300px;
+                }
+                img {
+                    border: $border;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                    // box-shadow: 0px 0px 25px $master_color_2;
+                }
+            }
+            .principal_name_and_title {
+                border: $border;
+                text-align: center;
+                margin-top: 50px;
+                @include xs{
+                    margin-top: 30px;
+                }
+                .name_text {
+                    border: $border;
+                    font-family: $font_extrabold;
+                    font-size: 30px;
+                    color: #013f6c;
+                    @include xs{
+                        font-size: 20px;
+                    }
+                }
+                .name_title {
+                    border: $border;
+                    font-family: $font_semibold;
+                    font-size: 20px;
+                    color: #013f6c;
+                    margin-top: 15px;
+                    @include xs{
+                        font-size: 14px;
+                    }
+                }
+            }
+        }
+
+        // principal_image_name_and_title_area end
+
+        // principal_message_start
+        .principal_message {
+            border: $border;
+            @include xs{
+                margin-top: 50px;
+            }
+            .message_title {
+                border: $border;
+                text-align: center;
+                margin-bottom: 25px;
+                .message_title_text {
+                    border: $border;
+                    font-size: 30px;
+                    font-family: $font_regular;
+                }
+            }
+            .message_text_content {
+                border: $border;
+                .message_text {
+                    border: $border;
+                    font-size: 15px;
+                    font-family: $font_medium;
+                    .text {
+                        border: $border;
+                        margin: 20px 0px;
+                    }
+                }
+            }
+        }
+        // principal_message_end
+    }
+}
+// principal_message_area end
+
+// co-curricular_activities_and_news_activities start
+.co-curricular_activities_and_news_activities {
+    border: $border;
+    padding: 50px 0px;
+    .co-curricular_activities_and_news_activities_container {
+        border: $border;
+        //  co-curricular_activities start
+        .co-curricular_and_news_area {
+            border: $border;
+            @include xs{
+                margin-top: 50px;
+            }
+            .co-curricular_and_news_title {
+                border: $border;
+                padding: 10px;
+                margin-bottom: 30px;
+                background-color: $master_color_2;
+                .text_title {
+                    border: $border;
+                    color: $white;
+                }
+            }
+            // co-curricular_activities content start
+            .left_area {
+                border: $border;
+                .content_image_area {
+                    border: $border;
+                    .content_image {
+                        border: $border;
+                        width: 100%;
+                        height: 200px;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                }
+                .content_title_area {
+                    border: $border;
+                    margin-top: 15px;
+                    align-items: center;
+                    display: flex;
+                    &:hover {
+                        .title {
+                            color: $master_color_2;
+                        }
+                    }
+                    .title {
+                        border: $border;
+                        color: $black;
+                        font-size: 20px;
+                        line-height: 20px;
+                        font-family: $font_semibold;
+                        transition-duration: 0.4s;
+                    }
+                }
+                .content_date_area {
+                    border: $border;
+                    margin-top: 10px;
+                    a {
+                        border: $border;
+                        span {
+                            i {
+                                font-size: 12px;
+                                color: $master_color_2;
+                            }
+                            border: $border;
+                            font-size: 16px;
+                            font-family: $font_regular;
+                            text-transform: uppercase;
+                            color: $off_white;
+                        }
+                    }
+                }
+                .content_details_text {
+                    border: $border;
+                    margin: 20px 0px;
+                    .text {
+                        border: $border;
+                        font-size: 16px;
+                        line-height: 26px;
+                        font-family: $font_regular;
+                        color: $black;
+                    }
+                }
+                .read_more {
+                    border: $border;
+                    font-family: $font_regular;
+                    font-size: 14px;
+                    line-height: 14px;
+                    padding: 8px 10px;
+                    background-color: transparent;
+                    border: 1px solid #e1e1e1;
+                    box-shadow: 0px 0px 1px #bfbfbf;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        color: $white;
+                        background-color: $master_color_2;
+                        border: 1px solid transparent;
+                    }
+                }
+            }
+            .right_area {
+                border: $border;
+                gap: 20px;
+                display: grid;
+                @include xs{
+                    margin-top: 30px;
+                }
+                // content_card start
+                .content_card {
+                    border: $border;
+
+                    display: flex;
+                    justify-content: space-between;
+
+                    .card_image {
+                        border: $border;
+                        width: 120px;
+                        height: 85px;
+                        img {
+                            height: 100%;
+                            width: 100%;
+                            object-fit: cover;
+                        }
+                    }
+                    .card_title_and_date {
+                        border: $border;
+                      
+                        @include xs{
+                            width: 140px;
+                        }
+                        .card_title {
+                            border: $border;
+                            &:hover {
+                                .title_text {
+                                    color: $master_color_2;
+                                }
+                            }
+                            .title_text {
+                                border: $border;
+                                font-size: 16px;
+                                font-family: $font_semibold;
+                                color: $black;
+                                transition-duration: 0.4s;
+                            }
+                        }
+                        .card_date {
+                            border: $border;
+                            .date_text {
+                                border: $border;
+                                span {
+                                    border: $border;
+                                    font-size: 14px;
+                                    color: $off_white;
+                                    line-height: 14px;
+                                    text-transform: uppercase;
+                                    i {
+                                        font-size: 12px;
+                                        color: $master_color_2;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                // content_card end
+            }
+            // co-curricular_activities content end
+        }
+        //  co-curricular_activities end
+    }
+}
+// co-curricular_activities_and_news_activities end
+
+// youtube_video_area start
+.youtube_video_area {
+    background-color: $bg_color;
+    padding: 50px 0px;
+    .youtube_video_content {
+        iframe{
+            @include xs{
+                width: 100%;
+                height: 180px;
+            }
+        }
+    }
+}
+// youtube_video_area end
+
+// image_and_video_gallery_area start
+.image_and_video_gallery_area {
+    border: $border;
+    padding: 50px 0px;
+    .image_and_video_gallery_content {
+        border: $border;
+        .gallery_area {
+            border: $border;
+            .gallery_title {
+                border: $border;
+                padding: 10px;
+                background-color: $master_color_2;
+                margin-bottom: 30px;
+                @include xs{
+                margin-top: 50px;   
+                
+                }
+                .text_title {
+                    border: $border;
+                    color: $white;
+                }
+            }
+            //  gallery_content start
+            .gallery_content {
+                border: $border;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 25px;
+                .gallery_item {
+                    border: $border;
+                    .item {
+                        border: $border;
+                        a {
+                            border: $border;
+                            width: 300px;
+                            height: 215px;
+                            @include xs{
+                                width: 270px;
+                            height:170px;
+                            }
+                            img {
+                                border: $border;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                        }
+                        .video_area {
+                            width: 300px;
+                            height: 215px;
+                            position: relative;
+                            @include xs{
+                                width: 270px;
+                                height: 170px;
+                                }
+                            img {
+                                border: $border;
+                                width: 100%;
+                                height: 100%;
+                                object-fit: cover;
+                            }
+                            .video_play_icon {
+                                border: $border;
+                                position: absolute;
+                                top: 82px;
+                                left: 135px;
+                                width: 50px;
+                                height: 50px;
+                                justify-content: center;
+                                align-items: center;
+                                display: flex;
+                                border: 2px solid $white;
+                                border-radius: 50%;
+                                @include xs{
+                                    top: 58px;
+                                left: 113px;
+                                    }
+                                i {
+                                    border: $border;
+                                    font-size: 20px;
+                                    color: $white;
+                                }
+                            }
+                        }
+                    }
+                    .item_title {
+                        border: $border;
+                        margin: 15px 0px 5px 0px;
+                        a {
+                            border: $border;
+                            font-size: 18px;
+                            font-family: $font_semibold;
+                            color: $black;
+                            transition-duration: 0.4s;
+                            &:hover {
+                                color: $master_color_2;
+                            }
+                        }
+                    }
+                    .item_date {
+                        border: $border;
+                        a {
+                            border: $border;
+                            span {
+                                border: $border;
+                                font-size: 14px;
+                                line-height: 14px;
+                                font-family: $font_medium;
+                                color: $off_white;
+                                text-transform: uppercase;
+                                i {
+                                    border: $border;
+                                    font-size: 12px;
+                                    color: $master_color_2;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+            //  gallery_content end
+        }
+    }
+}
+// image_and_video_gallery_area end
