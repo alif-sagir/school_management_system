@@ -502,7 +502,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 @media screen and (max-width: 575.9px) {
   .banner_area {
-    height: 360px;
+    height: 560px;
   }
 }
 .banner_area .banner_area_2 {
