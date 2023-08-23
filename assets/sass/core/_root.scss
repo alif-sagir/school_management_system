@@ -1,9 +1,9 @@
 // scrollbar edit start
-html{
+html {
     /* width */
     ::-webkit-scrollbar {
         width: 10px;
-        @include xs{
+        @include xs {
             width: 0px;
         }
     }
@@ -18,20 +18,14 @@ html{
     ::-webkit-scrollbar-thumb {
         background: #192f59;
         border-radius: 10px;
-        
     }
 
     /* Handle on hover */
     ::-webkit-scrollbar-thumb:hover {
-        background:#00d772;
+        background: #00d772;
     }
+
+    // overflow-x: hidden;
 }
 // scrollbar edit end
 
-// text_title start
-.text_title{
-    font-size: 20px;
-    line-height: 20px;
-    font-family: $font_bold;
-}
-// text_title end

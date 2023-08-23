@@ -1,0 +1,48 @@
+// notice_area start
+.notice_area_all {
+    border: $border;
+    margin-bottom: 100px;
+    @include xs{
+        margin-bottom: 50px;
+    }
+    ul {
+        border: $border;
+        gap: 35px;
+        display: grid;
+        li {
+            border: $border;
+            .notice_icon-and_text {
+                border: $border;
+                display: flex;
+                align-items: center;
+                &:hover{
+                    .iconn{
+                        i{
+                            color: $off_white;
+                        }
+                    }
+                    .textt{
+                        color: $off_white;
+                    }
+                }
+                .iconn {
+                    margin-right: 16px;
+                    i {
+                        border: $border;
+                        color: $black;
+                        font-size: 18px;
+                        transition-duration: .4s;
+                    }
+                }
+                .textt {
+                    border: $border;
+                    color: $black;
+                    font-size: 18px;
+                    font-family: $font_medium;
+                    transition-duration: .4s;
+                }
+            }
+        }
+    }
+}
+// notice_area end

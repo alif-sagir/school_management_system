@@ -5,6 +5,9 @@
     @include xs {
         display: none;
     }
+    @include sm {
+        display: none;
+    }
     .header_area_top_content {
         border: $border;
         // email_and_contact_number_area start
@@ -90,6 +93,13 @@
 // header_area start
 .header_area {
     border: $border;
+    background-color: $white;
+    // position: sticky;
+    // top: 0;
+    // z-index: 999999;
+    @include xs {
+        position: unset;
+    }
     .header_area_content {
         border: $border;
         display: flex;
@@ -99,6 +109,11 @@
             display: block;
             justify-content: center;
             display: grid;
+        }
+        @include sm {
+            display: block;
+            // justify-content: center;
+            // display: grid;
         }
         // logo_area start
         .logo_area {
@@ -110,6 +125,12 @@
             @include xs {
                 width: 55px;
                 height: 45px;
+                margin: auto;
+                margin-top: 10px;
+            }
+            @include sm {
+                width: 80px;
+                height: 73px;
                 margin: auto;
                 margin-top: 10px;
             }
@@ -130,6 +151,10 @@
                 margin-left: 0px;
                 padding: 15px 0px;
             }
+            @include sm {
+                justify-content: center;
+                display: grid;
+            }
             .school_name {
                 border: $border;
                 .school_title {
@@ -141,6 +166,16 @@
                     @include xs {
                         font-size: 18px;
                         line-height: 18px;
+                    }
+                    @include sm {
+                        font-size: 36px;
+                        line-height: 46px;
+                    }
+                    @include md {
+                        font-size: 37px;
+                    }
+                    @include lg {
+                        font-size: 40px;
                     }
                 }
             }
@@ -161,6 +196,16 @@
                     @include xs {
                         font-size: 16px;
                         line-height: 16px;
+                    }
+                    @include sm {
+                        font-size: 24px;
+                        line-height: 30px;
+                    }
+                    @include md {
+                        font-size:25px;
+                    }
+                    @include lg {
+                        font-size:26px;
                     }
                 }
             }

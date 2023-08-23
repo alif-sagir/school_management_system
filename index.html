@@ -40,9 +40,11 @@
     <link rel="stylesheet" href="./assets/bootstrap/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/icon/fontawesome-free-6.2.0-web/css/all.min.css">
     <link rel="stylesheet" href="./assets/styles/style.css">
+
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body>
+<body id="bottom_to_up">
     <!-- header_area_top start -->
     <header class="header_area_top">
         <div class="container">
@@ -82,7 +84,7 @@
                     <!-- portal_area start -->
                     <div class="col-md-6">
                         <div class="portal_area">
-                            <a class="portal_text" href="#">Portal</a>
+                            <a class="portal_text" href="login_page.html">Portal</a>
                         </div>
                     </div>
                     <!-- portal_area end -->
@@ -127,18 +129,25 @@
 
                 <!-- responsive_menu_area start -->
                 <div class="responsive_menu_area">
-                    <button class="searchh_area icon" onclick="search_area_show.classList.toggle('active_search')" class="search_area">
+                    <button class="searchh_area icon" onclick="search_area_show.classList.toggle('active_search')"
+                        class="search_area">
                         <i class="fa-solid fa-magnifying-glass"></i>
                     </button>
-                    <button class="menu_area icon">
+                   <a href="login_page.html" class="Portal_area_responsive">
+                    <p class="Portal_text">Portal</p>
+                   </a>
+                    <button onclick="add_menu_area.classList.toggle('active_class')" class="menu_area icon">
                         <i class="fa-solid fa-bars"></i>
                     </button>
                 </div>
-                 <!-- responsive_menu_area end -->
+                <!-- responsive_menu_area end -->
 
                 <!-- all_nave area start -->
-                <div class="all_nave">
+                <div id="add_menu_area" class="all_nave">
                     <ul>
+                        <li>
+                            <a href="index.html">হোম</a>
+                        </li>
                         <li>
                             <a href="#">প্রচ্ছদ</a>
                         </li>
@@ -147,51 +156,52 @@
 
                             <ul>
                                 <li>
-                                    <a href="#">aaaa</a>
+                                    <a href="#">জানুন 1</a>
                                 </li>
                                 <li>
-                                    <a href="#">aaaa</a>
+                                    <a href="#">জানুন 2</a>
                                 </li>
                                 <li>
-                                    <a href="#">aaaa1 <i class="fa-solid fa-angle-down"></i></a>
+                                    <a href="#">জানুন 3 <i class="fa-solid fa-angle-down"></i></a>
 
                                     <ul>
                                         <li>
-                                            <a href="#">bbbb</a>
+                                            <a href="#">জানুন 01</a>
                                         </li>
                                         <li>
-                                            <a href="#">bbbb</a>
+                                            <a href="#">জানুন 02</a>
                                         </li>
                                         <li>
-                                            <a href="#">bbbb1 <i class="fa-solid fa-angle-down"></i></a>
+                                            <a href="#">জানুন 03 <i class="fa-solid fa-angle-down"></i></a>
 
                                             <ul>
                                                 <li>
-                                                    <a href="#">cccc</a>
+                                                    <a href="#">জানুন 001</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">cccc</a>
+                                                    <a href="#">জানুন 002</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">cccc3 <i class="fa-solid fa-angle-down"></i></a>
+                                                    <a href="#">জানুন 003 <i class="fa-solid fa-angle-down"></i></a>
                                                     <ul>
                                                         <li>
-                                                            <a href="#">dddd</a>
+                                                            <a href="#">জানুন 0001</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#">dddd</a>
+                                                            <a href="#">জানুন 0002</a>
                                                         </li>
                                                         <li>
-                                                            <a href="#">dddd4 <i class="fa-solid fa-angle-down"></i></a>
+                                                            <a href="#">জানুন 0003<i
+                                                                    class="fa-solid fa-angle-down"></i></a>
                                                             <ul>
                                                                 <li>
-                                                                    <a href="#">eeee</a>
+                                                                    <a href="#">জানুন 00001</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">eeee</a>
+                                                                    <a href="#">জানুন 00002</a>
                                                                 </li>
                                                                 <li>
-                                                                    <a href="#">eeee </a>
+                                                                    <a href="#">জানুন 00003 </a>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -211,33 +221,33 @@
                                         class="fa-solid fa-angle-down"></i></span></a>
                             <ul>
                                 <li>
-                                    <a href="#">uuuu</a>
+                                    <a href="#">একাডেমিক 1</a>
                                 </li>
                                 <li>
-                                    <a href="#">uuuu</a>
+                                    <a href="#">একাডেমিক 2</a>
                                 </li>
                                 <li>
-                                    <a href="#">uuuu1 <i class="fa-solid fa-angle-down"></i></a>
+                                    <a href="#">একাডেমিক 3 <i class="fa-solid fa-angle-down"></i></a>
 
                                     <ul>
                                         <li>
-                                            <a href="#">vvvv</a>
+                                            <a href="#">একাডেমিক 01</a>
                                         </li>
                                         <li>
-                                            <a href="#">vvvv</a>
+                                            <a href="#">একাডেমিক 02</a>
                                         </li>
                                         <li>
-                                            <a href="#">vvvv2 <i class="fa-solid fa-angle-down"></i></a>
+                                            <a href="#">একাডেমিক 03 <i class="fa-solid fa-angle-down"></i></a>
 
                                             <ul>
                                                 <li>
-                                                    <a href="#">wwww</a>
+                                                    <a href="#">একাডেমিক 001</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">wwww</a>
+                                                    <a href="#">একাডেমিক 002</a>
                                                 </li>
                                                 <li>
-                                                    <a href="#">wwww3</a>
+                                                    <a href="#">একাডেমিক 003</a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -248,17 +258,20 @@
                         <li>
                             <a href="#">ভর্তি ও সহায়তা</a>
                         </li>
-                        <li>
+                        <!-- <li>
                             <a href="#">সহপাঠ কার্যক্রম</a>
-                        </li>
-                        <li>
+                        </li> -->
+                        <!-- <li>
                             <a href="#">তথ্যকোষ</a>
-                        </li>
+                        </li> -->
                         <li>
                             <a href="#">যুক্ত হোন</a>
                         </li>
 
                     </ul>
+                    <div class="extra_area" onclick="add_menu_area.classList.toggle('active_class')">
+
+                    </div>
                 </div>
                 <!-- all_nave area end -->
 
@@ -290,23 +303,23 @@
             <div class="container">
                 <div class="banner_area_content">
                     <div class="row">
-                        <div class="col-md-6">
+                        <div class="col-md-12 col-lg-12  ">
                             <div class="banner_text_area">
-                                <div class="school_title">
+                                <div class="school_title" data-aos="fade-right"data-aos-delay="300" data-aos-duration="450">
                                     <h2 class="title_text">
                                         শহরের সেরা স্কুল ও কলেজ</h2>
                                 </div>
-                                <div class="school_name">
+                                <div class="school_name" data-aos="fade-right" data-aos-delay="600" data-aos-duration="550">
                                     <h1 class="name_text">টেক পার্ক স্কুল অ্যান্ড কলেজ
                                     </h1>
                                 </div>
-                                <div class="button_area">
+                                <div class="button_area" data-aos="fade-right" data-aos-delay="900" data-aos-duration="600">
                                     <button>Take a Tour</button>
                                 </div>
                             </div>
 
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-12 col-lg-12">
                             <div class="banner_image_area">
                                 <!-- <img src="./assets/images/banner_image/bg_image.webp" alt="camcuse"> -->
                             </div>
@@ -331,7 +344,7 @@
                 <div class="row">
                     <!-- introduction_area start -->
                     <div class="col-xs-12 col-md-8">
-                        <div class="introduction_area">
+                        <div class="introduction_area"  data-aos="fade-right" data-aos-duration="1000">
                             <div class="introduction_title">
                                 <h2 class="text_title">সংক্ষিপ্ত পরিচিতি</h2>
                             </div>
@@ -382,16 +395,17 @@
                     <!-- introduction_area end -->
 
                     <!-- notice_area start -->
-                    <div class="col-xs-12 col-md-4">
-                        <a href="#" class="notice_area">
+                    <div class="col-xs-12 col-md-4" data-aos="fade-left" data-aos-duration="1000">
+                        <div class="notice_area">
                             <h2 class="text_title">নোটিশ/বিজ্ঞপ্তি</h2>
-                        </a>
+                            <a class="right_angle_area" href="notice.html"><i class="fa-solid fa-angle-right"></i></a>
+                        </div>
 
                         <div class="notice_area_content">
                             <ul>
                                 <li>
                                     <a href="#"><span class="right_icon"><i class="fa-solid fa-caret-right"></i></span>
-                                        আলিম ১ম বর্ষে ভর্তি চলছে</a>
+                                        আলিম ১ম বর্ষে ভর্তি চলছে </a>
                                 </li>
                                 <li>
                                     <a href="#"><span class="right_icon"><i class="fa-solid fa-caret-right"></i></span>
@@ -436,7 +450,7 @@
                 <div class="row">
                     <!-- principal_image_name_and_title_area start -->
                     <div class="col-xs-12 col-md-6">
-                        <div class="principal_image_name_and_title_area">
+                        <div class="principal_image_name_and_title_area" data-aos="fade-right" data-aos-duration="1000">
                             <div>
                                 <div class="principal_image_area">
                                     <img src="./assets/images/principal_image/principal.jpeg" alt="img">
@@ -454,7 +468,7 @@
 
                     <!-- principal_message_start -->
                     <div class="col-xs-12 col-md-6">
-                        <div class=" principal_message">
+                        <div class=" principal_message" data-aos="fade-left" data-aos-duration="1000">
                             <div class="message_title">
                                 <h2 class="message_title_text">অধ্যক্ষের বাণী</h2>
                             </div>
@@ -517,13 +531,15 @@
             <div class="co-curricular_activities_and_news_activities_container">
                 <div class="row">
                     <!-- co-curricular_activities start -->
-                    <div class="col-xs-12 col-md-6">
-                        <div class="co-curricular_activities co-curricular_and_news_area">
+                    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="co-curricular_activities co-curricular_and_news_area" data-aos="fade-right" data-aos-duration="1000">
                             <!-- co-curricular_activities_title start -->
                             <div class="co-curricular_activities_title co-curricular_and_news_title">
                                 <h2 class="text_title">
                                     সহপাঠ কার্যক্রম
                                 </h2>
+                                <a class="right_angle_area" href="co-curricular_activities.html"><i
+                                        class="fa-solid fa-angle-right"></i></a>
                             </div>
                             <!-- co-curricular_activities_title end -->
 
@@ -554,9 +570,9 @@
                                                 করুন। সাংস্কৃতিক পক্ষ ২০২৩ এর ব্র্রুুশিয়ার</p>
                                         </div>
 
-                                        <button class="read_more">
+                                        <a href="co-curricular_activities_details.html" class="read_more">
                                             আরোও পড়ুন
-                                        </button>
+                                        </a>
 
                                     </div>
                                 </div>
@@ -644,13 +660,14 @@
                     </div>
                     <!-- co-curricular_activities end -->
                     <!-- news_activities_container start -->
-                    <div class="col-xs-12 col-md-6">
-                        <div class="news_activities_container co-curricular_and_news_area">
+                    <div class="col-xs-12 col-md-12 col-lg-12 col-xl-6">
+                        <div class="news_activities_container co-curricular_and_news_area" data-aos="fade-left" data-aos-duration="1000">
                             <!-- news_activities_container_title start -->
                             <div class="news_activities_container_title co-curricular_and_news_title">
                                 <h2 class="text_title">
                                     সংবাদ ও কার্যক্রম
                                 </h2>
+                                <a class="right_angle_area" href="news.html"><i class="fa-solid fa-angle-right"></i></a>
                             </div>
                             <!-- news_activities_container_title end -->
 
@@ -681,9 +698,9 @@
                                                 করুন। সাংস্কৃতিক পক্ষ ২০২৩ এর ব্র্রুুশিয়ার</p>
                                         </div>
 
-                                        <button class="read_more">
+                                        <a href="news_details.html" class="read_more">
                                             আরোও পড়ুন
-                                        </button>
+                                        </a>
 
                                     </div>
                                 </div>
@@ -782,7 +799,7 @@
     <!-- co-curricular_activities_and_news_activities end -->
 
     <!-- youtube_video_area start -->
-    <section class="youtube_video_area">
+    <section class="youtube_video_area" data-aos="fade-up" data-aos-duration="1000">
         <div class="container">
             <div class="youtube_video_content">
                 <iframe width="100%" height="600px" src="https://www.youtube.com/embed/1EOZEIOiPPA"
@@ -800,11 +817,13 @@
             <div class="image_and_video_gallery_content">
                 <div class="row">
                     <!-- image_area start -->
-                    <div class="col-xs-12 col-md-6">
-                        <div class="image_gallery_area gallery_area">
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="image_gallery_area gallery_area" data-aos="fade-right" data-aos-duration="1000">
                             <!-- gallery_title start -->
                             <div class="image_gallery_area_title gallery_title">
                                 <h2 class="text_title">ছবি গ্যালারী</h2>
+                                <a class="right_angle_area" href="image_gallery.html"><i
+                                        class="fa-solid fa-angle-right"></i></a>
                             </div>
                             <!-- gallery_title end -->
                             <!-- gallery_content start -->
@@ -897,11 +916,14 @@
                     </div>
                     <!-- image_area end -->
 
-                    <div class="col-xs-12 col-md-6">
-                        <div class="video_gallery_area gallery_area">
+                    <!-- video_gallery_area start -->
+                    <div class="col-xs-12 col-md-12 col-lg-6">
+                        <div class="video_gallery_area gallery_area" data-aos="fade-left" data-aos-duration="1000">
                             <!-- gallery_title start -->
                             <div class="video_gallery_area_title gallery_title">
                                 <h2 class="text_title">ভিডিও গ্যালারী</h2>
+                                <a class="right_angle_area" href="video_gallery.html"><i
+                                        class="fa-solid fa-angle-right"></i></a>
                             </div>
                             <!-- gallery_title end-->
                             <!-- gallery_content start -->
@@ -1007,6 +1029,7 @@
                             <!-- gallery_content end -->
                         </div>
                     </div>
+                    <!-- video_gallery_area end -->
                 </div>
             </div>
         </div>
@@ -1019,7 +1042,7 @@
             <div class="footer_area_content">
                 <div class="row">
                     <!-- footer_logo_area start -->
-                    <div class="col-md-3">
+                    <div class="col-md-12 col-lg-3">
                         <div class="footer_logo_area">
                             <a href="#">
                                 <img src="./assets/images/website_logo/logo.png" alt="logo">
@@ -1048,7 +1071,7 @@
                     <!-- footer_logo_area end -->
 
                     <!-- importent_link_area start -->
-                    <div class="col-md-3">
+                    <div class="col-md-4 col-lg-3">
                         <div class="footer_title">
                             <h2 class="text_title">গুরুত্বপূর্ণ লিঙ্কসমূহ</h2>
                         </div>
@@ -1078,7 +1101,7 @@
                     <!-- importent_link_area end -->
 
                     <!-- contact area start -->
-                    <div class="col-md-3">
+                    <div class="col-md-4 col-lg-3">
                         <div class="footer_title">
                             <h2 class="text_title">যোগাযোগের ঠিকানা</h2>
                         </div>
@@ -1122,7 +1145,7 @@
                     <!-- contact area end -->
 
                     <!-- map area start -->
-                    <div class="col-md-3">
+                    <div class="col-md-4 col-lg-3">
                         <div class="footer_title">
                             <h2 class="text_title">ম্যাপ</h2>
                         </div>
@@ -1144,7 +1167,7 @@
     <footer class="copyright_area">
         <div class="container">
             <div class="copyright_area_content">
-                <span class="copyright_text text"> Copy Right © 2023 
+                <span class="copyright_text text"> Copy Right © 2023
                     <a class="text" href="#">Tech Park School and College,
                         Dhaka</a></span>
             </div>
@@ -1152,6 +1175,22 @@
     </footer>
     <!-- copyright_area end -->
     <!-- footer_area end -->
+
+    <!-- bottom_to_upper_button start -->
+    <a href="#bottom_to_up" class="bottom_to_upper_button_area">
+
+        <i class="fa-solid fa-angle-up"></i>
+
+    </a>
+    <!-- bottom_to_upper_button end -->
+
+    <!-- javaScript area start -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init();
+    </script>
+    <!-- javaScript area end -->
 
 </body>
 

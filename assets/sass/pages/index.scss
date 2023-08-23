@@ -5,7 +5,7 @@
     height: 600px;
     background-color: #dcd7d7;
     @include xs {
-        height: 560px;
+        height: 250px;
     }
     .banner_area_2 {
         border: $border;
@@ -32,6 +32,12 @@
                         @include xs {
                             font-size: 16px;
                         }
+                        @include sm {
+                            font-size: 25px;
+                        }
+                        @include md {
+                            font-size: 27px;
+                        }
                     }
                 }
                 .school_name {
@@ -42,7 +48,6 @@
                     margin: 45px 0px;
                     @include xs {
                         margin: 20px 0px;
-                      
                     }
                     .name_text {
                         border: $border;
@@ -52,11 +57,17 @@
                         @include xs {
                             font-size: 18px;
                         }
+                        @include sm {
+                            font-size: 35px;
+                        }
+                        @include md {
+                            font-size: 35px;
+                        }
                     }
                 }
                 .button_area {
                     border: $border;
-                    @include xs{
+                    @include xs {
                         margin-top: 50px;
                     }
                     button {
@@ -102,8 +113,8 @@
             .introduction_title {
                 border: $border;
                 background-color: $master_color_2;
-                text-align: center;
-                padding: 10px 0px;
+                // text-align: center;
+                padding: 10px 10px;
                 margin-bottom: 30px;
                 .text_title {
                     border: $border;
@@ -125,13 +136,34 @@
         .notice_area {
             border: $border;
             background-color: $master_color_2;
-            text-align: center;
-            padding: 10px 0px;
+            position: relative;
+            // text-align: center;
+            padding: 10px 10px;
             margin-bottom: 30px;
             width: 100%;
+            display: flex;
+            justify-content: space-between;
             .text_title {
                 border: $border;
                 color: $white;
+            }
+            .right_angle_area {
+                border: $border;
+                align-items: center;
+                display: flex;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                padding: 10px 15px;
+                color: $off_white;
+                transition-duration: 0.4s;
+                &:hover {
+                    color: $white;
+                }
+                i {
+                    border: $border;
+                    font-size: 18px;
+                }
             }
         }
         .notice_area_content {
@@ -241,6 +273,18 @@
                     width: 275px;
                     height: 300px;
                 }
+                @include sm {
+                    width: 350px;
+                    height: 380px;
+                }
+                @include md {
+                    width: 100%;
+                    height: 350px;
+                }
+                @include lg {
+                    width: 380px;
+                    height: 400px;
+                }
                 img {
                     border: $border;
                     width: 100%;
@@ -253,7 +297,7 @@
                 border: $border;
                 text-align: center;
                 margin-top: 50px;
-                @include xs{
+                @include xs {
                     margin-top: 30px;
                 }
                 .name_text {
@@ -261,8 +305,11 @@
                     font-family: $font_extrabold;
                     font-size: 30px;
                     color: #013f6c;
-                    @include xs{
+                    @include xs {
                         font-size: 20px;
+                    }
+                    @include md {
+                        font-size: 25px;
                     }
                 }
                 .name_title {
@@ -271,8 +318,11 @@
                     font-size: 20px;
                     color: #013f6c;
                     margin-top: 15px;
-                    @include xs{
+                    @include xs {
                         font-size: 14px;
+                    }
+                    @include md {
+                        font-size: 16px;
                     }
                 }
             }
@@ -283,7 +333,10 @@
         // principal_message_start
         .principal_message {
             border: $border;
-            @include xs{
+            @include xs {
+                margin-top: 50px;
+            }
+            @include sm {
                 margin-top: 50px;
             }
             .message_title {
@@ -318,22 +371,47 @@
 .co-curricular_activities_and_news_activities {
     border: $border;
     padding: 50px 0px;
+    @include xs {
+        padding: 0px 0px;
+    }
     .co-curricular_activities_and_news_activities_container {
         border: $border;
         //  co-curricular_activities start
         .co-curricular_and_news_area {
             border: $border;
-            @include xs{
+            @include xs {
                 margin-top: 50px;
             }
+           
             .co-curricular_and_news_title {
                 border: $border;
                 padding: 10px;
                 margin-bottom: 30px;
                 background-color: $master_color_2;
+                position: relative;
+                justify-content: space-between;
+                display: flex;
                 .text_title {
                     border: $border;
                     color: $white;
+                }
+                .right_angle_area {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    padding: 10px 15px;
+                    color: $off_white;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        color: $white;
+                    }
+                    i {
+                        border: $border;
+                        font-size: 18px;
+                    }
                 }
             }
             // co-curricular_activities content start
@@ -405,6 +483,7 @@
                     font-family: $font_regular;
                     font-size: 14px;
                     line-height: 14px;
+                    color: $master_color_2;
                     padding: 8px 10px;
                     background-color: transparent;
                     border: 1px solid #e1e1e1;
@@ -421,7 +500,10 @@
                 border: $border;
                 gap: 20px;
                 display: grid;
-                @include xs{
+                @include xs {
+                    margin-top: 30px;
+                }
+                @include sm {
                     margin-top: 30px;
                 }
                 // content_card start
@@ -430,11 +512,22 @@
 
                     display: flex;
                     justify-content: space-between;
-
+                    @include sm {
+                        justify-content: unset;
+                    }
+                    @include md {
+                        justify-content: unset;
+                    }
+                    @include lg {
+                        justify-content: unset;
+                    }
                     .card_image {
                         border: $border;
                         width: 120px;
                         height: 85px;
+                        // @include xs{
+                        //     width: 120px;
+                        // }
                         img {
                             height: 100%;
                             width: 100%;
@@ -443,9 +536,26 @@
                     }
                     .card_title_and_date {
                         border: $border;
-                      
-                        @include xs{
-                            width: 140px;
+                        flex: 1;
+                        @include xs {
+                            // width: 100%;
+                            margin-left: 10px;
+                        }
+                        @include sm {
+                            // width: 100%;
+                            margin-left: 10px;
+                        }
+                        @include md {
+                            // width: 100%;
+                            margin-left: 10px;
+                        }
+                        @include lg {
+                            // width: 100%;
+                            margin-left: 10px;
+                        }
+                        @include xl {
+                            // width: 100%;
+                            margin-left: 10px;
                         }
                         .card_title {
                             border: $border;
@@ -486,6 +596,17 @@
             // co-curricular_activities content end
         }
         //  co-curricular_activities end
+        .news_activities_container{
+            @include sm {
+                margin-top: 50px;
+            }
+            @include md {
+                margin-top: 50px;
+            }
+            @include lg {
+                margin-top: 50px;
+            }
+        }
     }
 }
 // co-curricular_activities_and_news_activities end
@@ -494,11 +615,32 @@
 .youtube_video_area {
     background-color: $bg_color;
     padding: 50px 0px;
+    @include xs {
+        margin-top: 50px;
+    }
+    @include sm {
+        margin-top: 50px;
+    }
+    // @include md {
+    //     margin-top: 50px;
+    // }
     .youtube_video_content {
-        iframe{
-            @include xs{
+        iframe {
+            @include xs {
                 width: 100%;
                 height: 180px;
+            }
+            @include sm {
+                width: 100%;
+                height: 300px;
+            }
+            @include md {
+                width: 100%;
+                height: 365px;
+            }
+            @include lg {
+                width: 100%;
+                height: 460px;
             }
         }
     }
@@ -509,6 +651,9 @@
 .image_and_video_gallery_area {
     border: $border;
     padding: 50px 0px;
+    @include xs {
+        padding: 0px 0px;
+    }
     .image_and_video_gallery_content {
         border: $border;
         .gallery_area {
@@ -518,13 +663,34 @@
                 padding: 10px;
                 background-color: $master_color_2;
                 margin-bottom: 30px;
-                @include xs{
-                margin-top: 50px;   
-                
+                display: flex;
+                justify-content: space-between;
+                position: relative;
+                @include xs {
+                    margin-top: 50px;
                 }
+                
                 .text_title {
                     border: $border;
                     color: $white;
+                }
+                .right_angle_area {
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                    position: absolute;
+                    top: 0px;
+                    right: 0px;
+                    padding: 10px 15px;
+                    color: $off_white;
+                    transition-duration: 0.4s;
+                    &:hover {
+                        color: $white;
+                    }
+                    i {
+                        border: $border;
+                        font-size: 18px;
+                    }
                 }
             }
             //  gallery_content start
@@ -542,9 +708,21 @@
                             border: $border;
                             width: 300px;
                             height: 215px;
-                            @include xs{
+                            @include xs {
                                 width: 270px;
-                            height:170px;
+                                height: 170px;
+                            }
+                            @include sm {
+                                width: 239px;
+                                height: 160px;
+                            }
+                            @include lg {
+                                width: 210px;
+                                height: 145px;
+                            }
+                            @include xl {
+                                width: 255px;
+                                height: 170px;
                             }
                             img {
                                 border: $border;
@@ -557,10 +735,22 @@
                             width: 300px;
                             height: 215px;
                             position: relative;
-                            @include xs{
+                            @include xs {
                                 width: 270px;
                                 height: 170px;
-                                }
+                            }
+                            @include sm {
+                                width: 239px;
+                                height: 160px;
+                            }
+                            @include lg {
+                                width: 210px;
+                                height: 145px;
+                            }
+                            @include xl {
+                                width: 255px;
+                                height: 170px;
+                            }
                             img {
                                 border: $border;
                                 width: 100%;
@@ -579,10 +769,22 @@
                                 display: flex;
                                 border: 2px solid $white;
                                 border-radius: 50%;
-                                @include xs{
+                                @include xs {
                                     top: 58px;
-                                left: 113px;
-                                    }
+                                    left: 113px;
+                                }
+                                @include sm {
+                                    top: 55px;
+                                    left: 95px;
+                                }
+                                @include lg {
+                                    top: 45px;
+                                    left: 85px;
+                                }
+                                @include xl {
+                                    top: 62px;
+                                    left: 112px;
+                                }
                                 i {
                                     border: $border;
                                     font-size: 20px;
@@ -627,6 +829,14 @@
                 }
             }
             //  gallery_content end
+        }
+        .video_gallery_area{
+            @include sm {
+                margin-top: 50px;
+            }
+            @include md {
+                margin-top: 50px;
+            }
         }
     }
 }
