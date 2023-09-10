@@ -10,6 +10,9 @@
 @import "./shareable_css/image-and-video_gallery_area.scss";
 @import "./shareable_css/dashbord_and_layout_menu.scss";
 @import "./shareable_css/bottom_to_upper_button.scss";
+
+@import "./shareable_css/view_all_button.scss";
+
 @import "./pages/dashbord_layout_page.scss";
 @import "./pages/login_page.scss";
 
@@ -21,12 +24,24 @@
 @import "./pages/notice_details.scss";
 // @import "./pages/news_details.scss";
 // @import "./pages/co-curricular_activities_details.scss";
-@import "./pages/image_gallery.scss";
-@import "./pages/video_gallery.scss";
+// @import "./pages/image_gallery.scss";
+// @import "./pages/video_gallery.scss";
 @import "./pages/notice.scss";
 @import "./pages/co-curricular_activities.scss";
 
-@import "./pages/news.scss";
+
+@import "./pages/result_statistics.scss";
+@import "./pages/introduction_and_notice_area.scss";
+@import "./pages/principal_image_and_message.scss";
+@import "./pages/countdown_area.scss";
+@import "./pages/image_gallery.scss";
+@import "./pages/video_gallery.scss";
+@import "./pages/youtube_video_area.scss";
+@import "./pages/all_index_area.scss";
+@import "./pages/news_area.scss";
+@import "./pages/blog_area.scss";
+
+
 @import "./pages/co-curricular_activities_details.scss";
 @import "./pages/news_details.scss";
 @import "./layouts/footer";

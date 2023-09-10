@@ -1,7 +1,19 @@
 // text_title start
-.text_title {
-    font-size: 20px;
-    line-height: 20px;
-    font-family: $font_bold;
-}
+// .text_title {
+//     font-size: 20px;
+//     line-height: 20px;
+//     font-family: $font_bold;
+// }
 // text_title end
+
+
+.area_title{
+    border: $border;
+    margin-bottom: 30px;
+    .area_title_text{
+        border: $border;
+        font-size: 30px;
+        font-family: $font_semibold;
+        color: black;
+    }
+}

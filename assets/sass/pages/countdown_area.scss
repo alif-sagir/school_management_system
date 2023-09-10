@@ -1,0 +1,65 @@
+// countdown_area start
+.countdown_area{
+    border: $border;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 80px;
+
+    .countdown_area_bg_color{
+        border: $border;
+        background-color: rgba(20, 79, 97, 0.9098039216);
+        padding: 160px 0px;
+        .countdown_area_content{
+            border: $border;
+            display: flex;
+            justify-content: center;
+            gap: 100px;
+            // countdown_content start
+             .countdown_content{
+                border: $border;
+                display: flex;
+                gap: 20px; 
+                position: relative;
+                &::after{
+                    content: "";
+                    width: 2px;
+                    height: 100px;
+                    background-color: $white;
+                    position: absolute;
+                    top: -7px;
+                    right: -50px;
+                }  
+                &:last-child{
+                    &::after{
+                        display: none;
+                    }
+                }         
+                 .countdown_number{
+                    border: $border;
+                     .number_text{
+                        border: $border;
+                        border-bottom: 3px solid #fdc800;
+                        color: $white;
+                        font-family: $font_semibold;
+                        font-family: $font_medium;
+                        font-size: 70px;
+                     }
+                 }
+                 .countdown_name{
+                    border: $border;
+                    align-items: center;
+                    display: flex;
+                     .name_text{
+                         border: $border;
+                         color: $white;
+                         font-family: $font_regular;
+                         font-size: 25px;
+                     }
+                 }
+             }
+            // countdown_content end
+        }
+    }
+}
+// countdown_area end

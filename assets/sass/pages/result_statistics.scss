@@ -1,0 +1,60 @@
+// result_statistics area start
+.result_statistics{
+    border: $border;
+    margin-top: -50px;
+    // position: relative;
+    // top: -45px;
+
+    .result_statistics_content{
+        border: $border;
+        display: flex;
+        justify-content: center;
+        gap:75px;
+        padding: 60px 0px;
+        background-color: $white;
+        box-shadow: 0px 0px 3px #e0e0e0;
+        border-radius: 4px;
+        // background-color: rgb(221, 221, 221);
+        // result_statistics_area start
+        .result_statistics_area{
+            border: $border;
+            display: flex;
+            .icon_area{
+                border: $border;
+                i{
+                    border: $border;
+                    font-size: 40px;
+                    color: $master_color_2;
+                }
+            }
+            .result_statistics_text_area{
+                border: $border;
+                margin-left: 10px;
+                .title{
+                    border: $border;
+                    margin-bottom: 10px;
+                    .title_text{
+                        border: $border;
+                        font-size: 18px;
+                        line-height: 18px;
+                        font-family: $font_semibold;
+                        color: $black;
+                    }
+                }
+                .content{
+                    border: $border;
+                    .content_text{
+                        border: $border;
+                        font-size: 16px;
+                        line-height: 16px;
+                        font-family: $font_semibold;
+                        color: $off_white;
+                    }
+                }
+            }
+           
+        }
+        // result_statistics_area end
+    }
+}
+// result_statistics area end
