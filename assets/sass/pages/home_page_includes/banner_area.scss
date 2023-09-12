@@ -20,9 +20,10 @@
         background-size: cover;
         .banner_blur_area {
             border: $border;
-            padding: 105px 0px;
-            // height: 100%;
-            backdrop-filter: blur(3px);        
+            padding: 63px 0px;
+            // backdrop-filter: blur(1px);
+            background: rgb(255,255,255);
+            background: linear-gradient(263deg, rgba(255,255,255,0.02573529411764708) 21%, rgba(20,79,97,0.5215336134453781) 100%);
             .banner_area_content {
                 border: $border;
                 // prime_minister_img_area start
@@ -106,6 +107,7 @@
                                 font-size: 40px;
                                 color: $master_color_2;
                                 color: $white;
+                                text-shadow: 0px 0px 10px #144f61;
                                 // color: $orange;
                             }
                         }

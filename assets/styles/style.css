@@ -1153,8 +1153,9 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 .banner_area .banner_area_2 .banner_blur_area {
   border: 0px solid red;
-  padding: 105px 0px;
-  backdrop-filter: blur(3px);
+  padding: 63px 0px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(263deg, rgba(255, 255, 255, 0.0257352941) 21%, rgba(20, 79, 97, 0.5215336134) 100%);
 }
 .banner_area .banner_area_2 .banner_blur_area .banner_area_content {
   border: 0px solid red;
@@ -1227,6 +1228,7 @@ html ::-webkit-scrollbar-thumb:hover {
   font-size: 40px;
   color: #144f61;
   color: #ffffff;
+  text-shadow: 0px 0px 10px #144f61;
 }
 .banner_area .banner_area_2 .banner_blur_area .banner_area_content .banner_title_area .banner_title_area_content .view_all_button_area {
   border: 0px solid red;
