@@ -134,6 +134,17 @@
             }
         }
         // all_image end
+        // view_all_button_area start
+         .view_all_button_area{
+             .view_all_button{
+                 transition-duration: .4s;
+                 &:hover{
+                    background-color: $off_white;
+                 }
+                
+             }
+         }
+        // view_all_button_area end
     }
 }
 // image_gallery_area end

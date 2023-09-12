@@ -1,10 +1,32 @@
 // result_statistics area start
 .result_statistics{
     border: $border;
-    margin-top: -50px;
+    margin-top: -40px;
     // position: relative;
     // top: -45px;
+    
+    position: relative;
+    z-index: 999;
 
+
+     // news-head-line_area start
+     .news-head-line_area {
+        border: $border;
+        // margin-top: 10px;
+        marquee {
+            border: $border;
+            // color: $master_color_2;
+            color: $white;
+            // color: $black;
+            // background-color: $white;
+            background-color: $master_color_2;
+            border-radius: 3px;
+            padding: 4px;
+            font-family: $font_medium;
+            font-size: 16px;
+        }
+    }
+     // news-head-line_area end
     .result_statistics_content{
         border: $border;
         display: flex;

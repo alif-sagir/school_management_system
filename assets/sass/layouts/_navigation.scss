@@ -127,7 +127,7 @@
             }
             > ul {
                 border: $border;
-                gap: 15px;
+                gap: 0px;
                 display: flex;
                 @include xs {
                     display: block;
@@ -158,9 +158,9 @@
                         border: $border;
                         color: $white;
                         font-family: $font_regular;
-                        font-size: 18px;
+                        font-size: 16px;
                         line-height: 18px;
-                        padding: 15px 10px;
+                        padding: 15px 8px;
                         transition-duration: 0.4s;
                         @include xs {
                             width: 100%;
@@ -190,7 +190,7 @@
                         }
                         .arraw_icon {
                             border: $border;
-                            margin-left: 3px;
+                            margin-left: 0px;
                             vertical-align: top;
                             // color: $white;
                             transition-duration: 0.4s;
@@ -199,10 +199,10 @@
                             }
                             i {
                                 border: $border;
-                                font-size: 17px;
-                                line-height: 17px;
+                                font-size: 13px;
+                                line-height: 13px;
                                 color: $white;
-                                margin-left: 5px;
+                                margin-left: 4px;
                                 transition-duration: 0.4s;
                                 @include xs {
                                     color: $master_color_2;
@@ -218,7 +218,7 @@
                     }
                     > ul {
                         display: block;
-                        width: 180px;
+                        width: 220px;
                         background-color: $white;
                         position: absolute;
                         top: 50px;
