@@ -1,6 +1,6 @@
 // page_title area start
 .page_title_area {
-    margin: 100px 0px;
+    margin: 50px 0px;
     overflow: hidden;
     @include xs{
         margin: 40px 0px;
@@ -20,7 +20,7 @@
     .page_title {
         font-size: 30px;
         line-height: 50px;
-        font-family: $font_bold;
+        font-family: $font_semibold;
         color: $master_color_2;
         position: relative;
         @include xs{

@@ -2,6 +2,8 @@
 .introduction_and_notice {
     border: $border;
     margin-bottom: 80px;
+    position: relative;
+    z-index: 99999;
     .introduction_and_notice_content {
         border: $border;
         justify-content: center;

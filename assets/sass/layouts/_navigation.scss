@@ -160,7 +160,7 @@
                         font-family: $font_regular;
                         font-size: 16px;
                         line-height: 18px;
-                        padding: 15px 8px;
+                        padding: 10px 8px;
                         transition-duration: 0.4s;
                         @include xs {
                             width: 100%;
@@ -215,6 +215,10 @@
                                 }
                             }
                         }
+                    }
+                    .main_manu{
+                        padding-top: 16px;
+                        padding-bottom: 16px;
                     }
                     > ul {
                         display: block;

@@ -5,9 +5,9 @@
 @import "./core/root";
 @import "./vendors/grid";
 @import "./shareable_css/page_title.scss";
-@import "./shareable_css/text_title.scss";
-@import "./shareable_css/notice_news_co-curricular_page_details.scss";
-@import "./shareable_css/image-and-video_gallery_area.scss";
+@import "./shareable_css/area_title.scss";
+// @import "./shareable_css/notice_news_co-curricular_page_details.scss";
+// @import "./shareable_css/image-and-video_gallery_area.scss";
 @import "./shareable_css/dashbord_and_layout_menu.scss";
 @import "./shareable_css/bottom_to_upper_button.scss";
 @import "./shareable_css/view_all_button.scss";
@@ -16,14 +16,14 @@
 @import "./layouts/navigation";
 // update page start
 @import "./pages/index.scss";
-
+@import "./pages/contact.scss";
+@import "./pages/video_gallery_page.scss";
+@import "./pages/image_gallery_page.scss";
 
 // update page end
 @import "./layouts/footer";
 //------------end
 
-
-@import "./pages/contact.scss";
 @import "./pages/notice_details.scss";
 @import "./pages/notice.scss";
 @import "./pages/co-curricular_activities.scss";

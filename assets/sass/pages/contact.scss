@@ -126,7 +126,7 @@
             }
             form {
                 border: $border;
-                .rirst_name_and_second_name_area{
+                .rirst_name_and_second_name_area {
                     display: flex;
                     justify-content: space-between;
                     @include xs {
@@ -157,6 +157,7 @@
                         border-bottom: 1px solid $master_color_2;
                         margin-bottom: 35px;
                         outline: 0;
+                        background-color: transparent;
                     }
                     textarea {
                         border: $border;
@@ -165,7 +166,8 @@
                         padding: 10px 10px 10px 0px;
                         border-bottom: 1px solid $master_color_2;
                         margin-bottom: 35px;
-                        outline: 0; 
+                        outline: 0;
+                        background-color: transparent;
                     }
                 }
                 .submit_button {
@@ -177,22 +179,22 @@
                     background-color: $master_color_2;
                     padding: 5px 0px;
                     border: 1px solid transparent;
-                   transition-duration: .4s;
-                 &:hover{
-                    background-color: transparent;
-                    border-color: $master_color_2;
-                    color: $master_color_2;
-                    i{
+                    transition-duration: 0.4s;
+                    &:hover {
+                        background-color: transparent;
+                        border-color: $master_color_2;
                         color: $master_color_2;
+                        i {
+                            color: $master_color_2;
+                        }
                     }
-                 }
-                       
-                    i{
+
+                    i {
                         border: $border;
                         font-size: 16px;
                         color: $white;
                         margin-right: 10px;
-                        transition-duration: .4s;
+                        transition-duration: 0.4s;
                     }
                 }
             }
