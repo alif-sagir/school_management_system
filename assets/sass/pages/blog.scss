@@ -1,0 +1,17 @@
+// blog_area start
+.inner_blog_area{
+    border: $border;
+    .blog_area_content{
+        // blog_and_sitebar_area start
+        .blog_and_sitebar_area{
+            display: flex;
+            .blog_item_area{
+                flex: 1;
+                justify-content: left;
+                // gap: 20px;
+            }
+        }
+        // blog_and_sitebar_area end
+    }
+}
+// blog_area end

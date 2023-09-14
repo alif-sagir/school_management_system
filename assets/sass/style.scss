@@ -14,17 +14,21 @@
 //------------start
 @import "./layouts/header";
 @import "./layouts/navigation";
+@import "./layouts/sidebar";
 // update page start
 @import "./pages/index.scss";
 @import "./pages/contact.scss";
 @import "./pages/video_gallery_page.scss";
 @import "./pages/image_gallery_page.scss";
+@import "./pages/blog.scss";
+@import "./pages/news.scss";
+@import "./shareable_css/news_and_blog_details.scss";
 
 // update page end
 @import "./layouts/footer";
 //------------end
 
-@import "./pages/notice_details.scss";
+// @import "./pages/notice_details.scss";
 @import "./pages/notice.scss";
 @import "./pages/co-curricular_activities.scss";
 
@@ -32,4 +36,4 @@
 @import "./pages/login_page.scss";
 
 @import "./pages/co-curricular_activities_details.scss";
-@import "./pages/news_details.scss";
+// @import "./pages/news_details.scss";
