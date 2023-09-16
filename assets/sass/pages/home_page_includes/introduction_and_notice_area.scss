@@ -33,7 +33,8 @@
                         line-height: 30px;
                         font-family: $font_regular;
 
-                        height: 360px;
+                        // height: 360px;
+                        height: 400px;
                         overflow-y: hidden;
                     }
                 }
@@ -71,7 +72,7 @@
                 .notice_area_content {
                     border: $border;
                     // height: 445px;
-                    height: 360px;
+                    height: 400px;
                     overflow-y: hidden;
                     ul {
                         border: $border;

@@ -11,6 +11,8 @@
 @import "./shareable_css/dashbord_and_layout_menu.scss";
 @import "./shareable_css/bottom_to_upper_button.scss";
 @import "./shareable_css/view_all_button.scss";
+@import "./shareable_css/pagination.scss";
+@import "./shareable_css/comment_area.scss";
 //------------start
 @import "./layouts/header";
 @import "./layouts/navigation";
@@ -23,13 +25,15 @@
 @import "./pages/blog.scss";
 @import "./pages/news.scss";
 @import "./shareable_css/news_and_blog_details.scss";
+@import "./pages/notice.scss";
+@import "./pages/notice_details.scss";
 
 // update page end
 @import "./layouts/footer";
 //------------end
 
 // @import "./pages/notice_details.scss";
-@import "./pages/notice.scss";
+// @import "./pages/notice.scss";
 @import "./pages/co-curricular_activities.scss";
 
 @import "./pages/dashbord_layout_page.scss";
