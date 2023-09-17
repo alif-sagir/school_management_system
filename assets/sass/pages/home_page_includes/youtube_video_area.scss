@@ -5,10 +5,16 @@
     padding: 80px 0px;
     margin-bottom: 80px;
     @include xs {
-        margin-top: 50px;
+        padding: 30px 0px;
+        margin-bottom: 30px;
     }
     @include sm {
-        margin-top: 50px;
+        padding: 30px 0px;
+        margin-bottom: 30px;
+    }
+    @include md {
+        padding: 40px 0px;
+        margin-bottom: 40px;
     }
     // @include md {
     //     margin-top: 50px;

@@ -2,6 +2,15 @@
 .news_area {
     border: $border;
     margin-bottom: 80px;
+    @include xs {
+        margin-bottom: 30px;
+       }
+    @include sm {
+        margin-bottom: 30px;
+       }
+    @include md {
+        margin-bottom: 40px;
+       }
     .news_content {
         border: $border;
         // area_title start
@@ -18,12 +27,30 @@
         .left_area {
             border: $border;
             // news_item start
+            @include xs {
+             margin-bottom: 50px;
+            }
+            @include sm {
+             margin-bottom: 50px;
+            }
             .news_item {
                 border: $border;
                 // news_image start
                 .news_image {
                     border: $border;
                     height: 393px;
+                    @include xs {
+                        height: 180px;
+                    }
+                    @include sm {
+                        height: 320px;
+                    }
+                    @include md {
+                        height: 220px;
+                    }
+                    @include lg {
+                        height: 300px;
+                    }
                     img {
                         border: $border;
                         width: 100%;
@@ -49,6 +76,15 @@
                             font-size: 18px;
                             font-family: $font_semibold;
                             color: $master_color_2;
+                            @include xs {
+                                font-size: 14px;
+                            }
+                            @include sm {
+                                font-size: 14px;
+                            }
+                            @include md {
+                                font-size: 16px;
+                            }
                             .text {
                                 border: $border;
                                 font-family: $font_regular;
@@ -84,6 +120,22 @@
                         &:hover {
                             color: $off_white;
                         }
+                        @include xs {
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                        @include sm {
+                            font-size: 16px;
+                            line-height: 30px;
+                        }
+                        @include md {
+                            font-size: 18px;
+                            line-height: 30px;
+                        }
+                        @include lg {
+                            font-size: 20px;
+                            line-height: 35px;
+                        }
                     }
                 }
                 // news_title_area end
@@ -100,6 +152,12 @@
                 border: $border;
                 gap: 30px;
                 display: grid;
+                @include xs {
+                    gap: 40px;
+                   }
+                @include md {
+                    gap: 40px;
+                   }
                 // news_item start
                 .news_item {
                     border: $border;
@@ -108,6 +166,14 @@
                         border: $border;
                         width: 160px;
                         height: 130px;
+                        @include xs {
+                            width: 60px;
+                            height: 60px;
+                        }
+                        @include md {
+                            width: 80px;
+                            height: 65px;
+                        }
                         img {
                             border: $border;
                             width: 100%;
@@ -135,6 +201,22 @@
                                 &:hover {
                                     color: $off_white;
                                 }
+                                @include xs {
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+                                @include sm {
+                                    font-size: 14px;
+                                    line-height: 25px;
+                                }
+                                @include md {
+                                    font-size: 15px;
+                                    line-height: 28px;
+                                }
+                                @include lg {
+                                    font-size: 16px;
+                                    line-height: 28px;
+                                }
                             }
                         }
                         // news_title_area end
@@ -152,6 +234,15 @@
                                     font-size: 16px;
                                     font-family: $font_semibold;
                                     color: $master_color_2;
+                                    @include xs {
+                                        font-size: 14px;
+                                    }
+                                    @include sm {
+                                        font-size: 14px;
+                                    }
+                                    @include md {
+                                        font-size: 15px;
+                                    }
                                     .text {
                                         border: $border;
                                         font-family: $font_regular;

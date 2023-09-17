@@ -110,12 +110,12 @@
             @include xs {
                 display: block;
                 justify-content: center;
-                display: grid;
+                display: flex;
             }
             @include sm {
                 display: block;
-                // justify-content: center;
-                // display: grid;
+                justify-content: center;
+                display: flex;
             }
             // logo_area start
             .logo_area {
@@ -127,14 +127,16 @@
                 @include xs {
                     width: 55px;
                     height: 45px;
-                    margin: auto;
-                    margin-top: 10px;
+                    margin-right: 6px;
                 }
                 @include sm {
+                    width: 50px;
+                    height: 50px;
+                    margin-right: 6px;
+                }
+                @include md {
                     width: 80px;
-                    height: 73px;
-                    margin: auto;
-                    margin-top: 10px;
+                    height: 70px;
                 }
                 img {
                     border: $border;
@@ -156,6 +158,7 @@
                 @include sm {
                     justify-content: center;
                     display: grid;
+                    padding: 15px 0px 15px 0px;
                 }
                 .school_name {
                     border: $border;
@@ -166,15 +169,15 @@
                         line-height: 45px;
                         color: $master_color_2;
                         @include xs {
-                            font-size: 18px;
-                            line-height: 18px;
+                            font-size: 17px;
+                            line-height: 22px;
                         }
                         @include sm {
-                            font-size: 36px;
-                            line-height: 46px;
+                            font-size:21px;
+                            line-height: 26px;
                         }
                         @include md {
-                            font-size: 37px;
+                            font-size: 28px;
                         }
                         @include lg {
                             font-size: 40px;
@@ -185,7 +188,14 @@
                     margin-bottom: 15px;
                     @include xs {
                         text-align: center;
-                        margin-bottom: 12px;
+                        margin-bottom: 3px;
+                    }
+                    @include sm {
+                        text-align: center;
+                        margin-bottom: 7px;
+                    }
+                    @include md {
+                        margin-bottom: 0px;
                     }
                     .school_title {
                     }
@@ -196,15 +206,15 @@
                         font-size: 30px;
                         line-height: 30px;
                         @include xs {
-                            font-size: 16px;
-                            line-height: 16px;
+                            font-size: 11px;
+                            line-height: 13px;
                         }
                         @include sm {
-                            font-size: 24px;
-                            line-height: 30px;
+                            font-size: 14px;
+                            line-height: 14px;
                         }
                         @include md {
-                            font-size: 25px;
+                            font-size: 20px;
                         }
                         @include lg {
                             font-size: 26px;

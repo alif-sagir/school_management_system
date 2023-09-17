@@ -2,6 +2,16 @@
 .image_gallery_area {
     border: $border;
     margin-bottom: 80px;
+    @include xs{
+        margin-bottom: 30px;
+    }
+    @include sm{
+        margin-bottom: 30px;
+    }
+    @include md{
+        margin-bottom: 40px;
+    }
+   
     .image_gallery_area_content {
         border: $border;
         // area_title start
@@ -32,6 +42,18 @@
                         border: $border;
                         width: 381px;
                         height: 381px;
+                        @include xs{
+                            width: 150px;
+                        height: 150px;
+                        }
+                        @include sm{
+                            width: 283px;
+                        height: 283px;
+                        }
+                        @include md{
+                            width: 379px;
+                        height: 379px;
+                        }
                         img {
                             border: $border;
                             width: 100%;
@@ -61,6 +83,18 @@
                         position: absolute;
                         top: 450px;
                         transition-duration: 0.1s;
+                        @include xs{
+                            width: 150px;
+                        height: 150px;
+                        }
+                        @include sm{
+                            width: 283px;
+                        height: 283px;
+                        }
+                        @include md{
+                            width: 379px;
+                        height: 379px;
+                        }
                         .date_area {
                             border: $border;
                             position: absolute;
@@ -89,6 +123,15 @@
                                 color: $white;
                                 text-align: center;
                                 // margin-top: 80px;
+                                @include xs{
+                                    font-size: 16px;
+                                }
+                                @include sm{
+                                    font-size: 16px;
+                                }
+                                @include md{
+                                    font-size: 18px;
+                                }
                             }
                         }
                     }

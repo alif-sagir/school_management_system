@@ -10,10 +10,25 @@
 .area_title{
     border: $border;
     margin-bottom: 30px;
+    @include xs{
+        margin-bottom: 20px;
+    }
+    @include sm{
+        margin-bottom: 20px;
+    }
     .area_title_text{
         border: $border;
         font-size: 30px;
         font-family: $font_semibold;
         color: black;
+        @include xs{
+            font-size: 20px;
+        }
+        @include sm{
+            font-size: 20px;
+        }
+        @include md{
+            font-size: 25px;
+        }
     }
 }

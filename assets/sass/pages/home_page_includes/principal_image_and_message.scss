@@ -2,13 +2,44 @@
 .principal_image_and_message_area {
     border: $border;
     margin-bottom: 80px;
+    @include xs{
+        margin-bottom: 30px;
+    }
+    @include sm{
+        margin-bottom: 30px;
+    }
+    @include md{
+        margin-bottom: 40px;
+    }
     .principal_image_and_message_area_content {
         border: $border;
         display: flex;
+        @include xs{
+            display: block;
+        }
+        @include sm{
+            display: block;
+        }
+        @include md{
+            // display: block;
+        }
+       
         // principal_image_area start
         .principal_image_area {
             border: $border;
             flex: 1;
+            @include md{
+                align-items: center;
+                display: flex;
+            }
+            @include lg{
+                align-items: center;
+                display: flex;
+            }
+            @include xl{
+                align-items: center;
+                display: flex;
+            }
             .principal_image {
                 border: $border;
                 img {
@@ -34,6 +65,9 @@
                 padding: 70px 50px;
                 align-items: center;
     display: flex;
+    @include xs{
+        padding: 40px 10px;
+    }
                 .message_content{
                     border: $border;
                     .area_title {
@@ -52,6 +86,12 @@
                             font-size: 17px;
                             line-height: 30px;
                             font-family:$font_regular;
+                            @include xs{
+                                font-size: 14px;
+                            }
+                            @include sm{
+                                font-size: 14px;
+                            }
                         }
                     }
                     .principal_name_and_school_name_area {
@@ -63,6 +103,12 @@
                             // line-height: 30px;
                             font-family:$font_semibold;
                             margin-bottom: 5px;
+                            @include xs{
+                                font-size: 16px;
+                            }
+                            @include sm{
+                                font-size: 16px;
+                            }
                         }
                         .school_name_text {
                             border: $border;
@@ -70,6 +116,12 @@
                             font-size: 16px;
                             // line-height: 30px;
                             font-family:$font_medium;
+                            @include xs{
+                                font-size: 14px;
+                            }
+                            @include sm{
+                                font-size: 14px;
+                            }
                         }
                     }
                 }

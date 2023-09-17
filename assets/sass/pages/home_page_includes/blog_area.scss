@@ -3,7 +3,15 @@
     border: $border;
     background-color: $white;
     padding: 80px 0px;
-   
+   @include xs{
+    padding: 30px 0px;
+   }
+   @include sm{
+    padding: 30px 0px;
+   }
+   @include md{
+    padding: 40px 0px;
+   }
     .blog_area_content {
         border: $border;
         // area_title start
@@ -38,6 +46,9 @@
                         }
                     }
                 }
+                @include md{
+                    width: 328px;
+                   }
                 // blog_image_and_details_button_area start
                 .blog_image_and_details_button_area {
                     border: $border;
@@ -47,6 +58,9 @@
                         width: 100%;
                         height: 240px;
                         transition-duration: .4s;
+                        @include xs{
+                            height: 190px;
+                           }
                         img {
                             border: $border;
                             width: 100%;
@@ -87,6 +101,9 @@
                     padding: 35px 35px;
                     border: 2px solid #144f611a;
                     border-top: unset;
+                    @include xs{
+                        padding: 35px 15px;
+                       }
                     .blog_title {
                         border: $border;
                         .title_text {
@@ -96,6 +113,17 @@
                             // font-family: $font_semibold;
                             font-family: $font_medium;
                             color: $master_color_2;
+                            @include xs{
+                                font-size: 16px;
+                            line-height: 26px;
+                               }
+                            @include sm{
+                                font-size: 16px;
+                            line-height: 26px;
+                               }
+                            @include md{
+                                font-size: 18px;
+                               }
                         }
                     }
                     .date_and_comment_area {
@@ -113,6 +141,15 @@
                                 font-family: $font_semibold;
                                 font-family: $font_medium;
                                 color: $master_color_2;
+                                @include xs{
+                                    font-size: 14px;
+                                   }
+                                @include sm{
+                                    font-size: 14px;
+                                   }
+                                @include md{
+                                    font-size: 15px;
+                                   }
                                 .text {
                                     border: $border;
                                     color: $off_white;
