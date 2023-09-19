@@ -6,6 +6,12 @@ html {
         @include xs {
             width: 0px;
         }
+        // @include sm {
+        //     width: 0px;
+        // }
+        // @include md {
+        //     width: 0px;
+        // }
     }
 
     /* Track */
@@ -27,6 +33,16 @@ html {
     }
 
     // overflow-x: hidden;
+    // position: relative;
+    @include xs{
+        overflow-x: hidden;
+    }
+    @include sm{
+        overflow-x: hidden;
+    }
+    @include md{
+        overflow-x: hidden;
+    }
 }
 // scrollbar edit end
 

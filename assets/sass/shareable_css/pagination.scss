@@ -1,21 +1,30 @@
 // pagination_area start
-.pagination_area{
+.pagination_area {
     border: $border;
     margin-top: 80px;
-    .pagination_content{
+    @include xs{
+        margin-top: 30px;
+      }
+    @include sm{
+        margin-top: 30px;
+      }
+    @include md{
+        margin-top: 40px;
+      }
+    .pagination_content {
         border: $border;
-        ul{
-            border: $border;     
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-    align-items: center;
-            li{
+        ul {
+            border: $border;
+            display: flex;
+            justify-content: center;
+            gap: 10px;
+            align-items: center;
+            li {
                 border: $border;
-                a{
+                a {
                     border: $border;
                 }
-                .button_area{
+                .button_area {
                     border: $border;
                     background-color: $master_color_2;
                     color: $white;
@@ -23,17 +32,16 @@
                     // font-family: $font_medium;
                     font-family: $font_regular;
                     border: 1px solid $master_color_2;
-                    transition-duration: .4s;
-                    &:hover{
+                    transition-duration: 0.4s;
+                    &:hover {
                         background-color: transparent;
                         color: $master_color_2;
                     }
-                   
                 }
-                .text_button_area{
+                .text_button_area {
                     padding: 3px 14px;
                 }
-                .number_button_area{
+                .number_button_area {
                     width: 31px;
                     height: 31px;
                     align-items: center;

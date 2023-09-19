@@ -4,6 +4,7 @@
     margin-bottom: 80px;
     position: relative;
     z-index: 99999;
+    overflow-x: hidden;
     @include xs{
         margin: 30px 0px;
     }

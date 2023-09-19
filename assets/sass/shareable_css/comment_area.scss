@@ -92,6 +92,7 @@
             }
             .user_name_and_comment_text {
                 border: $border;
+                flex: 1;
                 .user_name {
                     border: $border;
                     .user_name_text {
@@ -141,37 +142,15 @@
         display: flex;
         .content_width {
             width: calc(100% - 220px);
-            // border: $border;
-            // display: flex;
-            // .user_img {
-            //     border: $border;
-            //     width: 40px;
-            //     height: 40px;
-            //     border-radius: 50%;
-            //     margin-right: 15px;
-            //     img {
-            //         border: $border;
-            //         width: 100%;
-            //         height: 100%;
-            //         object-fit: cover;
-            //         border-radius: 50%;
-            //     }
-            // }
-            // .comment_text {
-            //     border: $border;
-            //     form {
-            //         border: $border;
-            //         input {
-            //             border: $border;
-            //         }
-            //         .cancel_and_submit_button_area {
-            //             border: $border;
-            //             .button_area {
-            //                 border: $border;
-            //             }
-            //         }
-            //     }
-            // }
+            @include xs{
+                width:unset;
+            }
+            @include sm{
+                width:unset;
+            }
+            @include md{
+                width:unset;
+            }
         }
     }
     // replay_comment_area end

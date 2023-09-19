@@ -1,23 +1,5 @@
 // all area main class
-// .header_area,
-// .nav_area,
-// .banner_area,
-// .result_statistics,
-// .introduction_and_notice,
-// .countdown_area,
-// .principal_image_and_message_area,
-// .all_index_area,
-// .news_area,
-// .blog_area,
-// .youtube_video_area,
-// .video_gallery_area,
-// .image_gallery_area,
-// .footer_area,
-// .copyright_area,
-.bottom_to_upper_button_area
- {
-    // display: none;
-}
+
 /* responsive_desine_mixin start*/
 @mixin xs() {
     @media screen and (max-width: 575.9px) {

@@ -30,6 +30,8 @@
 
 // update page end
 @import "./layouts/footer";
+
+
 //------------end
 
 // @import "./pages/notice_details.scss";
@@ -41,3 +43,23 @@
 
 @import "./pages/co-curricular_activities_details.scss";
 // @import "./pages/news_details.scss";
+
+.header_area,
+.nav_area,
+.banner_edit,
+.result_statistics,
+.introduction_and_notice,
+.countdown_area,
+.principal_image_and_message_area,
+.all_index_area,
+.news_area,
+.blog_area,
+.youtube_video_area,
+.video_gallery_area,
+.image_gallery_area,
+.footer_area,
+.copyright_area,
+.bottom_to_upper_button_area
+ {
+    // display: none;
+}

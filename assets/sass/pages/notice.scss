@@ -4,11 +4,22 @@
         // notice_site_bar_area start
         .notice_site_bar_area {
             display: flex;
+            @include xs{
+                display: block;
+            }
+            @include sm{
+                display: block;
+            }
             .notice_area {
                 border: $border;
                 flex: 1;
                 margin-right: 70px;
-                // padding: 70px 50px;
+                @include xs{
+                    margin-right: 0px;
+                }
+                @include sm{
+                    margin-right: 0px;
+                }
 
                 // area_title start
                 .area_title {
@@ -33,11 +44,25 @@
                                 display: flex;
                                 padding: 15px;
                                 border-radius: 3px;
+                                @include xs{
+                                    display: block;
+                                }
+                                @include sm{
+                                    display: block;
+                                }
                                 // notice date_area start
                                 .date_area {
                                     border: $border;
                                     text-align: center;
                                     width: 95px;
+                                    @include xs{
+                                        width: 100%;
+                                        margin-bottom: 16px;
+                                    }
+                                    @include sm{
+                                        width: 100%;
+                                        margin-bottom: 16px;
+                                    }
                                     // padding: 18px;
                                     .day_and_month_area {
                                         border: $border;

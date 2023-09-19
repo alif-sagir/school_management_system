@@ -5,10 +5,36 @@
         // blog_and_sitebar_area start
         .blog_and_sitebar_area{
             display: flex;
+            @include xs{
+                display: block;
+              
+            }
+            @include sm{
+                display: block;
+            }
             .blog_item_area{
                 flex: 1;
                 justify-content: left;
-                // gap: 20px;
+                @include xs{
+                    justify-content: center;
+                  }
+                @include sm{
+                    justify-content: center;
+                  }
+                  @include lg{
+                 gap: 25px;
+
+                  }
+                  .blog_item{
+                    @include lg{
+                        width: 290px;
+
+                      }
+                    @include xl{
+                        width: 370px;
+
+                      }
+                  }
             }
         }
         // blog_and_sitebar_area end

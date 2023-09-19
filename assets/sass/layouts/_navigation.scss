@@ -5,10 +5,6 @@
     position: sticky;
     top: 0px;
     z-index: 999999;
-    @include xs {
-        position: sticky;
-        top: 0px;
-    }
     .nav_area_content {
         border: $border;
         display: flex;
@@ -66,27 +62,26 @@
                     font-size: 20px;
                 }
             }
-            .menu_area{
+            .menu_area {
                 margin-left: auto;
             }
-            .Portal_area_responsive{
+            .Portal_area_responsive {
                 border: $border;
                 align-items: center;
                 display: flex;
                 padding: 6px;
-               .Portal_text{
-                border: $border;
-                font-size: 16px;
-                line-height: 16px;
-                font-family: $font_medium;
-                color: $white;
-                margin-left: 10px;
-               }
-               @include md {
-               display: none;
+                .Portal_text {
+                    border: $border;
+                    font-size: 16px;
+                    line-height: 16px;
+                    font-family: $font_medium;
+                    color: $white;
+                    margin-left: 10px;
+                }
+                @include md {
+                    display: none;
+                }
             }
-            }
-
         }
         // responsive_menu_area end
 
@@ -102,6 +97,8 @@
                 visibility: hidden;
                 opacity: 0;
                 transition-duration: 0.4s;
+
+                overflow-y: scroll;
             }
             @include sm {
                 display: flex;
@@ -133,16 +130,24 @@
                     display: block;
                     width: 70%;
                     background-color: $white;
+                    // overflow-y: scroll;
+                    padding-bottom: 100px;
                 }
                 @include sm {
                     display: block;
                     width: 70%;
                     background-color: $white;
+                    overflow-y: scroll;
+                    padding-bottom: 100px;
+                    overflow-y: scroll;
+                    padding-bottom: 100px;
                 }
                 @include md {
                     display: block;
                     width: 70%;
                     background-color: $white;
+                    overflow-y: scroll;
+                    padding-bottom: 100px;
                 }
                 > li {
                     border: $border;
@@ -216,10 +221,10 @@
                             }
                         }
                     }
-                    .main_manu{
+                    .main_manu {
                         padding-top: 16px;
                         padding-bottom: 16px;
-                       cursor: pointer;
+                        cursor: pointer;
                     }
                     > ul {
                         display: block;
@@ -233,14 +238,20 @@
                         @include xs {
                             z-index: 999;
                             top: 40px;
+                            left: 90px;
+                            padding-bottom: 200px;
                         }
                         @include sm {
                             z-index: 999;
                             top: 40px;
+                            left: 90px;
+                            padding-bottom: 200px;
                         }
                         @include md {
                             z-index: 999;
                             top: 40px;
+                            left: 90px;
+                            padding-bottom: 200px;
                         }
                         > li {
                             border-bottom: 1px solid $off_white;
@@ -259,16 +270,16 @@
                                 width: 180px;
                                 background-color: $white;
                                 position: absolute;
-                                top: 50px;
-                                left: 181px;
-                                @include xs{
-                                    left: 0px;
+                                // top: 50px;
+                                left: 110px;
+                                @include xs {
+                                    left: -88px;
                                 }
-                                @include sm{
-                                    left: 0px;
+                                @include sm {
+                                    left: -88px;
                                 }
-                                @include md{
-                                    left: 0px;
+                                @include md {
+                                    left: -88px;
                                 }
                                 box-shadow: 0px 0px 5px $master_color_2;
                                 display: none;

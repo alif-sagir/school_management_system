@@ -4,9 +4,21 @@
     .news_and_blog_content{
         .news_and_blog_details_and_site_bar_area{
             display: flex;
+            @include xs{
+                display: block;
+            }
+            @include sm{
+                display: block;
+            }
             .left_area{
                 flex: 1;
                 margin-right: 70px;
+                @include xs{
+                    margin-right: 0px;
+                }
+                @include sm{
+                    margin-right: 0px;
+                }
                 .news_and_blog_item{
                     .news_title_area{
                         .news_title_text{
