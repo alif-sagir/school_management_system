@@ -1542,7 +1542,7 @@ html ::-webkit-scrollbar-thumb:hover {
 }
 @media screen and (max-width: 575.9px) {
   .banner_area .banner_area_2 .banner_blur_area {
-    padding: 40px 0px;
+    padding: 60px 0px;
   }
 }
 .banner_area .banner_area_2 .banner_blur_area .banner_area_content {
