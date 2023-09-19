@@ -158,9 +158,27 @@
                     align-items: center;
                     display: flex;
                     position: relative;
+                    @include xs {
+                        display: unset;
+                    }
+                    @include sm {
+                        display: unset;
+                    }
+                    @include md {
+                        display: unset;
+                    }
                     &:hover {
                         > ul {
                             display: block;
+                            @include xs {
+                                margin-left: 20px;
+                            }
+                            @include sm {
+                                margin-left: 20px;
+                            }
+                            @include md {
+                                margin-left: 20px;
+                            }
                         }
                     }
                     a {
@@ -243,22 +261,40 @@
                             z-index: 999;
                             top: 40px;
                             left: 90px;
-                            padding-bottom: 200px;
+                            // padding-bottom: 200px;
+                            position: unset;
+                            width: 100%;
+                            box-shadow: unset;
                         }
                         @include sm {
                             z-index: 999;
                             top: 40px;
                             left: 90px;
-                            padding-bottom: 200px;
+                            // padding-bottom: 200px;
+                            position: unset;
+                            width: 100%;
+                            box-shadow: unset;
                         }
                         @include md {
                             z-index: 999;
                             top: 40px;
                             left: 90px;
-                            padding-bottom: 200px;
+                            // padding-bottom: 200px;
+                            position: unset;
+                            width: 100%;
+                            box-shadow: unset;
                         }
                         > li {
                             border-bottom: 1px solid $off_white;
+                            @include xs {
+                                border-bottom: unset;
+                            }
+                            @include sm {
+                                border-bottom: unset;
+                            }
+                            @include md {
+                                border-bottom: unset;
+                            }
                             &:hover {
                                 > ul {
                                     display: block;
@@ -269,6 +305,32 @@
                                 justify-content: space-between;
                                 display: flex;
                                 color: $master_color_2;
+                                @include xs {
+                                    justify-content: start;
+                                }
+                                @include sm {
+                                    justify-content: start;
+                                }
+                                @include md {
+                                    justify-content: start;
+                                }
+                                .arra_icon {
+                                    @include xs {
+                                        margin-left: 30px;
+                                        font-size: 13px;
+                                        line-height: 13px;
+                                    }
+                                    @include sm {
+                                        margin-left: 30px;
+                                        font-size: 13px;
+                                        line-height: 13px;
+                                    }
+                                    @include md {
+                                        margin-left: 30px;
+                                        font-size: 13px;
+                                        line-height: 13px;
+                                    }
+                                }
                             }
                             ul {
                                 width: 180px;
@@ -276,19 +338,41 @@
                                 position: absolute;
                                 // top: 50px;
                                 left: 110px;
+                                box-shadow: 0px 0px 5px $master_color_2;
                                 @include xs {
                                     left: -88px;
+                                    position: unset;
+                                    width: 100%;
+                                    margin-left: 40px;
+                                    box-shadow: unset;
                                 }
                                 @include sm {
                                     left: -88px;
+                                    position: unset;
+                                    width: 100%;
+                                    margin-left: 40px;
+                                    box-shadow: unset;
                                 }
                                 @include md {
                                     left: -88px;
+                                    position: unset;
+                                    width: 100%;
+                                    margin-left: 40px;
+                                    box-shadow: unset;
                                 }
-                                box-shadow: 0px 0px 5px $master_color_2;
+
                                 display: none;
                                 > li {
                                     border-bottom: 1px solid $off_white;
+                                    @include xs {
+                                        border-bottom: unset;
+                                    }
+                                    @include sm {
+                                        border-bottom: unset;
+                                    }
+                                    @include md {
+                                        border-bottom: unset;
+                                    }
                                     &:hover {
                                         > ul {
                                             display: block;
