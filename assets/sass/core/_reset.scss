@@ -4,18 +4,8 @@ body {
     outline: 0;
     box-sizing: border-box;
     font-family: $font_regular;
-    // overflow-x: hidden;
-    // background-color: #f7f7f7;
     background-color: #f3f6f8;
-    @include xs{
-        overflow-x: hidden;
-    }
-    @include sm{
-        overflow-x: hidden;
-    }
-    @include md{
-        overflow-x: hidden;
-    }
+   
 }
 
 h1,

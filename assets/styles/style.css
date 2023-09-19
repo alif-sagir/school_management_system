@@ -36,21 +36,6 @@ body {
   font-family: "Regular";
   background-color: #f3f6f8;
 }
-@media screen and (max-width: 575.9px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.9px) {
-  body {
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.9px) {
-  body {
-    overflow-x: hidden;
-  }
-}
 
 h1,
 h2,
@@ -86,6 +71,7 @@ html {
   /* Track */
   /* Handle */
   /* Handle on hover */
+  overflow-x: hidden;
 }
 html ::-webkit-scrollbar {
   width: 10px;
@@ -106,21 +92,6 @@ html ::-webkit-scrollbar-thumb {
 }
 html ::-webkit-scrollbar-thumb:hover {
   background: #ffffff;
-}
-@media screen and (max-width: 575.9px) {
-  html {
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 576px) and (max-width: 767.9px) {
-  html {
-    overflow-x: hidden;
-  }
-}
-@media (min-width: 768px) and (max-width: 991.9px) {
-  html {
-    overflow-x: hidden;
-  }
 }
 
 .page_title_area {
@@ -959,7 +930,8 @@ html ::-webkit-scrollbar-thumb:hover {
 @media screen and (max-width: 575.9px) {
   .nav_area .nav_area_content .all_nave {
     display: flex;
-    position: absolute;
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: 100vh;
     left: 300px;
@@ -972,7 +944,8 @@ html ::-webkit-scrollbar-thumb:hover {
 @media (min-width: 576px) and (max-width: 767.9px) {
   .nav_area .nav_area_content .all_nave {
     display: flex;
-    position: absolute;
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: 100vh;
     left: 300px;
@@ -984,7 +957,8 @@ html ::-webkit-scrollbar-thumb:hover {
 @media (min-width: 768px) and (max-width: 991.9px) {
   .nav_area .nav_area_content .all_nave {
     display: flex;
-    position: absolute;
+    position: fixed;
+    top: 0px;
     width: 100%;
     height: 100vh;
     left: 300px;
@@ -1003,7 +977,7 @@ html ::-webkit-scrollbar-thumb:hover {
     display: block;
     width: 70%;
     background-color: #ffffff;
-    padding-bottom: 100px;
+    overflow: auto;
   }
 }
 @media (min-width: 576px) and (max-width: 767.9px) {
@@ -1014,7 +988,7 @@ html ::-webkit-scrollbar-thumb:hover {
     overflow-y: scroll;
     padding-bottom: 100px;
     overflow-y: scroll;
-    padding-bottom: 100px;
+    overflow: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 991.9px) {
@@ -1023,7 +997,7 @@ html ::-webkit-scrollbar-thumb:hover {
     width: 70%;
     background-color: #ffffff;
     overflow-y: scroll;
-    padding-bottom: 100px;
+    overflow: auto;
   }
 }
 .nav_area .nav_area_content .all_nave > ul > li {
