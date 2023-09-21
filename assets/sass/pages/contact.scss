@@ -1,6 +1,7 @@
 // contact_page start
 .contact_page {
     border: $border;
+    overflow-x: hidden;
     .contact_page_content {
         border: $border;
         .page_title_area {

@@ -3661,6 +3661,7 @@ html ::-webkit-scrollbar-thumb:hover {
 
 .contact_page {
   border: 0px solid red;
+  overflow-x: hidden;
 }
 .contact_page .contact_page_content {
   border: 0px solid red;
